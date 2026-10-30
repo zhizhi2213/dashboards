@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人数据面板集</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --text: #1d2129; --sub: #6b7280;
+    --blue: #3b82f6; --border: #e5e7eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); padding: 40px 24px; max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 24px; margin-bottom: 6px; }
+  .sub { color: var(--sub); font-size: 14px; margin-bottom: 28px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  a.item { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px; text-decoration: none; color: var(--text); transition: transform .15s, box-shadow .15s; }
+  a.item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  .icon { font-size: 30px; margin-bottom: 10px; }
+  .item h2 { font-size: 17px; margin-bottom: 6px; }
+  .item p { font-size: 13px; color: var(--sub); line-height: 1.6; }
+  footer { text-align: center; color: var(--sub); font-size: 12px; margin-top: 40px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<h1>📊 个人数据面板集</h1>
+<div class="sub">基于个人健康与生活数据的可视化面板 · 数据驱动 · 持续更新</div>
+<div class="grid">
+  <a class="item" href="fitness/">
+    <div class="icon">🏋️</div>
+    <h2>减脂追踪面板</h2>
+    <p>体重变化趋势、每日目标达成度（步数 / 活动消耗 / 锻炼分钟）、乒乓球运动记录与 AI 评估建议。每日自动更新，体重数据已脱敏。</p>
+  </a>
+</div>
+<footer>由 AI 助手自动生成与更新 · <a href="https://github.com/zhizhi2213/dashboards" style="color:var(--blue)">GitHub</a></footer>
+</body>
+</html>
