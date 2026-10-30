@@ -12,7 +12,7 @@
 
 数据链路：`iPhone HealthKit → HealthMirror app → iCloud → 本地镜像 → data.json → 面板`
 
-- 减脂面板的脱敏公开版由 `agent-md` 仓库中的 `publish.py` 生成（体重仅展示相对变化，不含绝对数值与 BMI）
+- 减脂面板由 `agent-md` 仓库中的 `publish.py` 从知识库正式版同步生成
 - 本仓库 Git 历史即各期数据快照
 
 ## 新增面板
